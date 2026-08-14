@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+/*this link imports the Playfair Display font */
+
+/*MODO OSCURO*/
+
+    :root {
+        --background: rgb(149, 248, 165); /*Background*/
+        --background-header: #8ff08c; /*Header*/
+        --background-hero: #71f78e; /*Hero Section*/
+        --background-join: rgb(44, 182, 78); /*Join Us*/
+        --background-read: rgb(21, 116, 62); /*Read More - Join Us Button*/
+        --white-1: #f8f4f4; /*Buttons*/
+        --white-2: white; /*Buttons*/
+        --black-header: rgb(8, 8, 8); /*Home - Dark Mode*/
+        --texts: #000000; /*Texts*/
+    }
+
+    body.dark-mode { /*Alternative color pallet*/
+        --background: #18351f; /*Background*/
+        --background-header: #214d2a; /*Header*/
+        --background-hero: #1c5a2c; /*Hero Section*/
+        --background-join: #17652e; /*Join Us*/
+        --background-read: #5d7467; /*Read More - Join Us Button*/
+        --white-1: #080808; /*Buttons*/
+        --white-2: #ffffff; /*Buttons*/
+        --black-header: #ffffff; /*Home - Dark Mode*/
+        --texts: #ffffff; /*Texts*/
+    }
+
+body {
+    background-color: var(--background);
+    margin: 0;
+
+
+    header{
+        background-color: var(--background-header);
+         font-weight: bold;
+            display: flex;
+            padding: 2px 50px;
+            box-sizing: border-box;
+            width:100%;
+            justify-content: space-between;
+
+            /* This sets the header to be fixed at the top of the page */
+
+            position: fixed; /* This makes the header stay at the top of the page when scrolling */
+            top: 0; /* This positions the header at the very top of the page */
+            left: 0; /* This positions the header at the very left of the page */
+            right: 0; /* This positions the header at the very right of the page */
+    }
+    .logo {
+            color: var(--texts);
+            font-size: 2rem;
+            text-align: left;
+            font-family: 'Playfair Display', sans-serif;
+        }
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav a {
+    text-decoration: none;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+.feature-titles {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    width: 100%;
+    gap: 20px;
+}
+
+
+.feature-titles article {
+    flex: 1;
+    text-align: center;
+}
+
+.feature-titles h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.feature-titles img {
+    width: 90%;
+    max-width: 300px;
+
+    border-radius: 20px;
+
+    display: block;
+    margin: auto;
+}
+    .home, .about-us {
+        color: rgb(8, 8, 8);
+    }
+    .home, .dark-mode {
+        color: var(--black-header);
+        margin-right: 20px;
+        margin-left: 20px;
+        font-weight: bold;
+        align-items: center;
+        text-transform:capitalize;
+    }
+    .hero-section {
+        background-color: var(--background-hero);
+        padding: 100px 20px;
+        text-align: center;
+        width: 100%;
+        height: 100vh; /* This sets the height of the hero section to be 100% of the viewport height */
+        padding: 0px 100px; /* This adds padding to the left and right of the hero section */
+        display: flex; /* This makes the hero section a flex container */
+        align-items: center;
+        justify-content: space-around;
+        box-sizing: border-box; /* This makes sure that the padding is included in the width and height of the hero section */
+    }
+
+    .hero-section h1 {
+        font-size: 64px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: var(--texts);
+        font-family: 'Playfair Display', sans-serif;
+    }
+    .hero-section p {
+        font-size: 20px;
+        color: var(--texts);
+        font-family: 'Playfair Display', sans-serif;
+        padding: 30px 0px;
+    }
+
+    .adopt-button {
+        background-color: var(--texts);
+        color: var(--white-1);
+        border: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    .readMore {
+    padding: 50px 100px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+    .read-more a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: var(--background-read);
+        color: var(--white-2);
+        font-size: 15px;
+    }
+
+    .join-us {
+        background-color:var(--background-join);
+        padding: 100px 20px;
+        text-align: center;
+        width: 100%;
+        height: 27vh;
+        padding: 0px 100px;
+        box-sizing: border-box;
+    }
+
+    .join-us button {
+        display: inline-block;
+        padding: 5px 10px;
+        background-color: var(--background-read);
+        color: var(--white-2);
+    } 
+
+    .adopt-button{
+        background-color: var(--texts);
+        color: var(--white-1);
+        border: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    .feature-titles{
+        display: flex;
+        justify-content: space-around;
+        height: 100vh;
+    }
+
+    .adopt{
+        height: 100vh;
+        justify-content: space-around;
+
+    }
+
+    .adopt p {
+        font-size: 20px;
+        color: var(--texts);
+        font-family: 'Playfair Display', sans-serif;
+        padding: 30px 100px;
+        text-align: left;
+        margin-left: 60px;
+        margin-top: 120px;
+        flex: 1;
+        width: 45%;
+}
+    .care{
+        height: 100vh;
+        flex: 1;
+}
+    .dog-park{
+        height: 100vh;
+        flex: 1;
+}
+    .pancho-image{
+        display: flex;
+        justify-content: center;
+        float:right;
+        margin-right: 100px;
+        flex: 1;
+        width: 25%;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.phrase {
+    padding: 100px 20px;
+    text-align: center;
+    width: 100%;
+    height: 0vh;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    font-size: 40px;
+}
+.readMore img {
+    width: 800px;
+    height: auto;
+    max-width: 80%;
+    border-radius: 40px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.forStudents {
+    padding: 100px 20px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+.forStudents h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    display: flex;
+    font-size: 40px;
+}
+.engageStudents {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80vh;
+    gap: 50px;
+    padding: 0 100px;
+    box-sizing: border-box;
+}
+    .engageStudents img {
+    width: 30%;
+    max-width: 450px;
+    height: auto;
+    display: block;
+    border-radius: 10%;
+}
+.imgIndi {
+background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+
+}
+.issues {
+        background-color: var(--background-hero);
+        padding: 100px 20px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+}
+
+.issues h2{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 50px;
+}
+.issues p { 
+    
+ font-family: 'Playfair Display', sans-serif;
+ font-size: 34px;
+}
+.learnMore {
+     background-color: var(--texts);
+        color: var(--white-1);
+        border: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 5px;
+        text-decoration: none;
+}
+}
