@@ -1,3 +1,6 @@
+Name: Mariana Gonzalez
+Link: https://dsaw-2026-2.github.io/hw05-javascript-fundamentals-marigonz753-cmyk/
+
 # HW05 — JavaScript Fundamentals
 
 **Week 5 · DSAW · Universidad de La Sabana**
